@@ -80,5 +80,9 @@ body {
   background-size: 2000px 2000px;
 }
 
+p {
+  color: gray;
+  font-family: 'Montserrat' sans-serif;
+}
 
-  
+
