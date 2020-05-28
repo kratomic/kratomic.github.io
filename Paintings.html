@@ -33,6 +33,56 @@
         <li><a style="color: whitesmoke" href="Level6.html">Level 6</a> </li> 
     </ul>
    
+<!-- Slideshow -->
+
+<br>
+
+<h2 class="w3-center" style="color: gray; font-family: 'Montserrat', sans-serif;" >Paintings</h2> <br>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="paintings/paint 2.jpg">
+  <img class="mySlides" src="paintings/paint.jpg" style="padding-top: 5%; width: 60%;">
+  <img class="mySlides" src="paintings/paint 3.jpg" style="padding-top: 5%; width: 60%;">
+  <img class="mySlides" src="paintings/paint4.jpg" style="padding-top: 5%; width: 60%;">
+  <img class="mySlides" src="paintings/paint5.jpg" style="padding-top: 5%; width: 60%;">
+  <img class="mySlides" src="paintings/paint6.jpg" style="padding-top: 5%; width: 60%;">
+  <img class="mySlides" src="paintings/paint9.jpg" style="padding-top: 5%; width: 60%;">
+  <img class="mySlides" src="paintings/paint10.jpg" style="width: 70%; padding-top: 5%;">
+  <img class="mySlides" src="paintings/paint11.jpg">
+  <img class="mySlides" src="paintings/paint12.jpg">
+  <img class="mySlides" src="paintings/IMG_0616 copy.jpg" style="width: 70%; padding-top: 5%;">
+  <img class="mySlides" src="paintings/IMG_0615 copy.jpg">
+
+  <button class="w3-button w3-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-grey w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<br> 
+<br>
+<br>
+<br>
+<br>
+
     <div class="container-fluid">
         <div class="w3-bar w3-gray">
       
