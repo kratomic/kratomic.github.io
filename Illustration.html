@@ -33,6 +33,55 @@
         <li><a style="color: whitesmoke" href="Level6.html">Level 6</a> </li> 
     </ul>
    
+      <!-- Slideshow -->
+
+<br>
+
+<h2 class="w3-center" style="color: gray; font-family: 'Montserrat', sans-serif;" >Illustration</h2> <br>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="Illustration/P1 copy.jpg" style="width: 60%;">
+  <img class="mySlides" src="Illustration/P2 copy.jpg" style="width: 60%;">
+  <img class="mySlides" src="Illustration/IMG_0790 copy.JPG" style="width: 60%;">
+  <img class="mySlides" src="Illustration/IMG_0793 copy.JPG" style="width: 60%;">
+  <img class="mySlides" src="Illustration/IMG_0792 copy.JPG" style="width: 60%;">
+  <img class="mySlides" src="Illustration/IMG_0794 copy.PNG" style="width: 60%;"> 
+  <img class="mySlides" src="Illustration/Monthly  copy.gif" style="width: 60%;">
+  <img class="mySlides" src="Illustration/IMG_0796 copy.PNG" style="width: 60%;">
+  <img class="mySlides" src="Illustration/Sharp_-_Animation_ copy.gif">
+  <img class="mySlides" src="Illustration/IMG_0795.GIF">
+  <img class="mySlides" src="Illustration/IMG_0803.PNG" style="width: 90%; padding-top: 5%;">
+  <img class="mySlides" src="Illustration/IMG_0799 copy.PNG" style="width: 90%; padding-top: 5%;" <br> <br> <br> <br>> 
+
+  <button class="w3-button w3-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-grey w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<br>
+<br>
+<br>
+<br>
+
     <div class="container-fluid">
         <div class="w3-bar w3-gray">
       
